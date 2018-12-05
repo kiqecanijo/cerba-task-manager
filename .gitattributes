@@ -1,0 +1,5 @@
+*.js linguist-language=Javascript
+*.html linguist-language=html
+*css linguist-language=css
+*.php linguist-language=php
+*.sql linguist-language=sql

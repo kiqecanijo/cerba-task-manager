@@ -1,0 +1,49 @@
+
+<br><br>
+
+<img id="avatar" src='<?php echo $_SESSION['photo']; ?>'>
+
+<div class="row ">
+<div class="innerContent col  s10 offset-s1 ">
+  <h1 class="red-text "> <?php echo $_SESSION['name']; ?>,</h1>
+
+  <h4 class="red-text"> aqui estan tus tareas</h4>
+  <div class="row">
+    <div class="col m12 l6">
+      <h4 class="red-text text-darken-2">Añade:</h4>
+    </div>
+    <div class="col m12 l6">
+      <div class="row">
+        <a data-activates="slide-task" class="login  waves-effect waves-light alert btn   green" >Materia Nueva</a>
+      </div>
+      <div class="row">
+        <a data-activates="slide-subject" class="signin  waves-effect waves-light alert btn   " >Tarea nueva</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col m12 l6">
+      <h2 class="red-text text-darken-2">O bien:</h2>
+    </div>
+    <div class="col m12 l6">
+      <div class="row">
+        <a href="http://localhost/cerba/task.php" class="  waves-effect waves-light alert btn   blue" >tus tareas</a>
+      </div>
+      <div class="row">
+        <a class="waves-effect waves-light alert btn logout tooltipped red" data-position="bottom" data-delay="50" data-tooltip="No te vayas </3">Salir</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <ul id="tasks" class="collapsible" data-collapsible="accordion">
+
+
+
+  </ul>
+</div>
+
+
+</div>

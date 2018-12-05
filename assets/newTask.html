@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col s12 " >
+    <form id="newTask"  >
+      <p class="range-field">
+        <input type="range" id="hour" min="0" max="23" />
+      </p>
+
+      <div class="input-field col s12">
+        <input id="nameTask" type="text" class="validate" name="task" value="" >
+        <label for="name" data-error="mal :'c" data-success="bien :)">¿Cómo se llama tu tarea?</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="descriptionTask" type="text" class="validate" name="description" value="" >
+        <label for="name" data-error="mal :'c" data-success="bien :)">Añade una descripción a tu tarea</label>
+      </div>
+
+      <div class="input-field col s12">
+          <select name="subjecTo" id="subjecTo" >
+           <option value="" disabled selected>Escoge una materia para tu tarea</option>
+
+         </select>
+         <label for="subjecTo">¿Cual es la materia a la que deseas añadir la tarea?</label>
+      </div>
+
+      <?php echo getFunction("optionsValue");
+       ?>
+
+      <div class="input-field col s12">
+        <input type="date" id="date" class="datepicker">
+        <label for="date">¿Cual es la fecha de entrega de esta tarea?</label>
+
+      </div>
+
+
+
+
+
+      <div class="input-field col s12 m6">
+        <a class="waves-effect waves-light btn submit red darken-4 cancel">Cancelar</a>
+      </div>
+      <div class="input-field col s12 m6">
+        <a class="waves-effect waves-light btn taskSubmit disabled"  >añadir</a>
+      </div>
+
+
+    </form>
+  </div>
+</div>

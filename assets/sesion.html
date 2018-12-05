@@ -1,0 +1,81 @@
+
+<ul id="slide-subject" class="side-nav" style="width:100% !important">
+
+  <li><a class="subheader"><h3>Añade una materia</h3></a></li>
+  <li><div class="divider"></div></li>
+
+  <?php getAsset("newSubject");
+    ?>
+</ul>
+
+<ul id="slide-task" class="side-nav" style="width:100% !important">
+  <li><a class="subheader"><h3>Añade una tarea</h3></a></li>
+  <li><div class="divider"></div></li>
+  <p>
+    ¿cual es la hora de inicio?
+  </p>
+  <?php getAsset("newTask");
+   ?>
+</ul>
+
+
+
+
+<div class="section  ">
+   <br><br>
+   <div class="row ">
+
+    <div class="col s10 m8 offset-s1 offset-m2 boder-white " >
+      <div class="card horizontal  ">
+        <div class="card-image">
+
+
+          <img id="avatar" src='<?php echo $_SESSION['photo']; ?>'>
+        </div>
+        <div class="card-stacked">
+          <div class="card-content white-text">
+            <div class="row">
+              <h2 class="header red-text text-darken-2">Hola: <?php echo $_SESSION['name']; ?>  <?php echo $_SESSION['lastnamea'];  ?>   </h2>
+            
+            </div>
+
+
+          </div>
+          <div class="card-action">
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <div class="row">
+  <div class="col s12 m6 l3">
+    <a data-activates="slide-subject" class="login  waves-effect waves-light alert btn   green center" >Materia Nueva</a>
+
+  </div>
+  <div class="col s12 m6 l3">
+    <a data-activates="slide-task" class="signin  waves-effect waves-light alert btn  center " >Tarea nueva</a>
+
+  </div>
+
+  <div class="col s12 m6 l3">
+    <a class="waves-effect waves-light alert btn  tooltipped disabled center" data-position="bottom" data-delay="50" data-tooltip="En desarrollo :v">estadisticas</a>
+
+  </div>
+  <div class="col s12 m6 l3">
+    <a class="waves-effect waves-light alert btn logout tooltipped red center" data-position="bottom" data-delay="50" data-tooltip="No te vayas </3">Salir</a>
+
+  </div>
+
+  </div>
+  <ul id="tasks" class="collapsible" data-collapsible="accordion">
+
+
+
+  </ul>
+</div>
